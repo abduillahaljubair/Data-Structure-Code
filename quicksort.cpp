@@ -14,7 +14,7 @@ while(i<j)
      }  
     while(a[i]>pivot)
      {
-      j++;
+      j--;
      }
 
 
@@ -36,6 +36,14 @@ void quicksort(int low,int high)
 
     }
 }
+void printing()
+{
+     for(int i=0;i<5;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+
+}
 int main()
 {
     vector<int>c;
@@ -49,11 +57,7 @@ int main()
     }
     quicksort(0,n-1);
 
-     for(int i=0;i<n;i++)
-    {
-        cout<<a[i]<<" ";
-    }
-
+    printing();
 
 
 }
